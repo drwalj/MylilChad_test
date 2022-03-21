@@ -109,4 +109,13 @@
         app:layout_constraintStart_toEndOf="@+id/infoSender"
         app:layout_constraintTop_toBottomOf="@+id/button" />
 
+    <Button
+        android:id="@+id/changerbtn"
+        android:layout_width="77dp"
+        android:layout_height="49dp"
+        android:text="change"
+        android:textSize="10sp"
+        tools:layout_editor_absoluteX="303dp"
+        tools:layout_editor_absoluteY="399dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

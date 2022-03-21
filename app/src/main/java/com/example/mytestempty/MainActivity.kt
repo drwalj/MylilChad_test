@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
 
         val lvlButton = findViewById<Button>(R.id.button)
         val pointButton = findViewById<Button>(R.id.pointsAdden)
+        val changerbtn = findViewById<Button>(R.id.changerbtn)
 
         val daTextView = findViewById<TextView>(R.id.textView)
         val ptAnzeige = findViewById<TextView>(R.id.pointAnzeige)
@@ -36,7 +37,7 @@ class MainActivity : AppCompatActivity() {
 /*
         fun sendstring(info:String) {
             val s1 = DatagramSocket(6789, InetAddress.getLocalHost() )
-            val client = Socket(InetAddress.getLocalHost(), 6789)
+            val client = Socket(InetAddress.getLocalHost(), 6789) #idk whats wrong with
             var d1 = DatagramPacket()
             s1.send()
             client.outputStream.write(info.length)
@@ -60,6 +61,12 @@ class MainActivity : AppCompatActivity() {
         pointButton.setOnClickListener{
             points++
             ptAnzeige.text= "Points: $points"
+        }
+
+
+        changerbtn.setOnClickListener{
+            daTextView.text = "Fortnite"
+
         }
 
         lvlButton.setOnClickListener{
